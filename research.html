@@ -1,7 +1,14 @@
 <!DOCTYPE html>
 <!--
   RESEARCH PAGE (research.html)
-  To add a project: copy one <li> ... </li> block, paste it, change the text.
+
+  Each research project is one block that starts with:
+      <div class="project">
+  and has a picture on the left and text on the right.
+  To add a new project: copy a whole <div class="project"> ... </div>
+  block, paste it below, and change the picture name and the text.
+
+  Pictures used on this page: research1.png ... research5.png
 -->
 <html lang="en">
 <head>
@@ -27,49 +34,191 @@
     </div>
   </nav>
 
+  <!-- ===================== BANNER ===================== -->
+  <div class="banner"><h1>Research</h1></div>
+
   <main class="container">
-    <h1 class="page-title">Research</h1>
+
+    <!-- ===================== RESEARCH OVERVIEW ===================== -->
+    <section>
+      <h2>Research Overview</h2>
+      <p class="justify">
+        My research focuses on the development of mathematical, statistical, and machine learning
+        methods for solving real-world problems in cybersecurity, artificial intelligence, and
+        computational science. I am particularly interested in machine learning and deep learning for
+        intrusion detection, DDoS attack analysis, and intelligent security systems, as well as broader
+        theoretical and computational topics such as implicit models in machine learning, constrained
+        quantization, and fluid-mechanics-based combustion modeling. Across these areas, my work combines
+        mathematical modeling, data-driven methods, numerical simulation, and AI-based approaches to
+        better understand complex systems and develop reliable, efficient, and interpretable solutions.
+      </p>
+    </section>
 
     <!-- ===================== RESEARCH INTERESTS ===================== -->
     <section>
       <h2>Research Interests</h2>
-      <p>
-        My research uses machine learning and deep learning to build reliable, data-driven
-        solutions for cybersecurity, especially network and IoT security, and for healthcare data.
-        I am also interested in large language models and quantum computing for security.
-      </p>
       <div class="tags">
         <span class="tag">Machine Learning</span>
         <span class="tag">Deep Learning</span>
+        <span class="tag">Cybersecurity</span>
         <span class="tag">LLMs</span>
-        <span class="tag">Cyber Security</span>
-        <span class="tag">Network Security</span>
-        <span class="tag">Quantum Cybersecurity</span>
-        <span class="tag">Quantum Computing</span>
-        <span class="tag">IoT Security</span>
-        <span class="tag">Data Science</span>
-        <span class="tag">Artificial Intelligence</span>
+        <span class="tag">Health Informatics</span>
+        <span class="tag">Fluid Mechanics</span>
       </div>
     </section>
 
     <!-- ===================== RESEARCH PROJECTS ===================== -->
     <section>
       <h2>Research Projects</h2>
-      <ul class="items">
-        <li>
-          <div class="item-head"><b>DDoS Detection Using Machine Learning and Deep Learning</b><span class="date">2023 – 2024</span></div>
-          M.S. thesis research on improving DDoS attack detection with ML/DL techniques.
-        </li>
-        <li>
-          <div class="item-head"><b>Intrusion Detection System Comparison</b><span class="date">Spring 2024</span></div>
-          Built intrusion detection systems with FFNN, LSTM, and RandNN for IoT networks (poster).
-        </li>
-        <li>
-          <div class="item-head"><b>Constrained Quantization for Probability Distributions</b><span class="date">Summer 2023</span></div>
-          Research in quantization theory: optimal sets and errors for the uniform distribution.
-        </li>
-      </ul>
+
+      <!-- ===== Project 1 ===== -->
+      <div class="project">
+        <img src="research1.png" alt="Implicit models in machine learning">
+        <div class="project-text">
+          <h3>Implicit Models in Machine Learning</h3>
+          <p class="justify">
+            Implicit models are an emerging class of machine learning models that compute their outputs
+            through iterative fixed-point updates rather than a single feedforward pass. Instead of directly
+            learning a mapping from input to output, an implicit model learns an operator whose repeated
+            application gradually converges to an equilibrium solution. This research direction focuses on
+            understanding how simple implicit operators can represent complex input-output mappings
+            through iteration.
+          </p>
+        </div>
+      </div>
+
+      <!-- ===== Project 2 ===== -->
+      <div class="project">
+        <img src="research2.png" alt="Machine learning in cybersecurity">
+        <div class="project-text">
+          <h3>Machine Learning in Cybersecurity</h3>
+          <p class="justify">
+            Machine learning and deep learning have become important tools for detecting and analyzing
+            cyber threats in modern networked systems. This research direction focuses on developing
+            data-driven models for cybersecurity applications, including DDoS attack detection, intrusion
+            detection, IoT network security, and network behavior analysis. The goal is to identify
+            malicious traffic patterns, improve attack detection accuracy, and support more reliable and
+            intelligent cybersecurity systems.
+          </p>
+          <p class="justify">
+            The work builds on experience with machine learning and deep learning algorithms for DDoS
+            cyberattack detection and intrusion detection system development. This research direction
+            combines statistical learning, data science, and AI-based modeling to address practical
+            cybersecurity challenges.
+          </p>
+          <h4>Some Selected Work</h4>
+          <ol>
+            <li>
+              Performance Analysis of Machine Learning Algorithms on Imbalanced DDoS Attack Dataset,
+              <b>Dipok Deb</b>, Hansapani Rodrigo, Sanjeev Kumar, IEEE World AI IoT Congress (AIIoT), 2024.
+              <a class="btn" href="https://ieeexplore.ieee.org/abstract/document/10579021" target="_blank">Link</a>
+            </li>
+            <li>
+              Application and Analysis of Machine Learning and Deep Learning Algorithms in Detection of
+              DDoS Cyberattacks, <b>Dipok Deb</b>, M.S. Thesis, 2024.
+              <a class="btn" href="https://ieeexplore.ieee.org/abstract/document/10579021" target="_blank">Link</a>
+            </li>
+            <li>
+              Comparative Evaluation of Machine Learning Models with Different Data Balancing Techniques
+              for DDoS Attack Detection, <b>Dipok Deb</b>, Hansapani Rodrigo, Sanjeev Kumar, Submitted.
+              <a class="btn" href="https://www.researchsquare.com/article/rs-8888642/v1" target="_blank">Preprint</a>
+            </li>
+          </ol>
+        </div>
+      </div>
+
+      <!-- ===== Project 3 ===== -->
+      <div class="project">
+        <img src="research3.png" alt="Constrained quantization">
+        <div class="project-text">
+          <h3>Constrained Quantization</h3>
+          <p class="justify">
+            Constrained quantization is a research area in probability and approximation theory that
+            studies how to represent a probability distribution with a finite set of points while
+            minimizing approximation error under certain constraints.
+          </p>
+          <p class="justify">
+            The research investigates how probability distributions can be approximated efficiently and
+            how imposed constraints affect the structure of optimal quantizers. This work connects
+            probability theory, statistical approximation, optimization, and mathematical analysis and
+            provides insight into how continuous distributions can be represented using discrete structures.
+          </p>
+          <h4>Related Work</h4>
+          <ol>
+            <li>
+              Constrained Quantization for a Uniform Distribution, P. Biteng, M. Caguiat, <b>D. Deb</b>,
+              M. K. Roychowdhury, and B. Villanueva, <i>Houston Journal of Mathematics</i> 50 (2024),
+              no. 1, 121–142.
+              <a class="btn" href="https://arxiv.org/abs/2312.16615" target="_blank">Link</a>
+            </li>
+          </ol>
+        </div>
+      </div>
+
+      <!-- ===== Project 4 ===== -->
+      <div class="project">
+        <img src="research4.png" alt="Fluid mechanics and knocking combustion">
+        <div class="project-text">
+          <h3>Fluid Mechanics and Knocking Combustion</h3>
+          <p class="justify">
+            This research focuses on the numerical study of knocking combustion, a complex fluid-mechanics
+            and combustion phenomenon that occurs when end-gas autoignition generates strong pressure waves
+            inside a combustion chamber. The project used a one-dimensional constant-volume reactor model to
+            simulate premixed n-heptane/air combustion by coupling the compressible Navier–Stokes equations
+            with detailed chemical kinetic mechanisms. This study investigated how equivalence ratio and
+            initial temperature influence pressure-wave development, autoignition timing, heat release, and
+            knocking intensity. Overall, this work helps explain how fuel-air mixture conditions affect
+            pressure oscillations and combustion stability in engine-like systems.
+          </p>
+          <h4>Related Work</h4>
+          <ol>
+            <li>
+              The Effects of Equivalence Ratio on Pressure Wave Development during Knocking Combustion,
+              <b>Dipok Deb</b>, M. A. Uddin, H. Terashima, N. Oshima, <i>Journal of Scientific Research</i>,
+              10(2), 117–131, 2018.
+              <a class="btn" href="https://www.banglajol.info/index.php/JSR/article/view/34491" target="_blank">Link</a>
+            </li>
+          </ol>
+        </div>
+      </div>
+
+      <!-- ===== Project 5 ===== -->
+      <div class="project">
+        <img src="research5.png" alt="Coursework projects in data science">
+        <div class="project-text">
+          <h3>Coursework Projects in Data Science and Machine Learning</h3>
+          <p class="justify">
+            As part of my Ph.D. coursework in Data Science, Data Mining, and Machine Learning, I completed
+            several applied machine learning and statistical modeling projects across healthcare,
+            agriculture, materials science, sensor analytics, clustering, image recognition, genomics, and
+            salary prediction. These projects involved data preprocessing, exploratory data analysis, model
+            development, feature selection, regression, classification, clustering, and performance
+            evaluation. Through these works, I gained hands-on experience applying machine learning methods
+            to real-world datasets and interpreting model results for practical decision-making.
+          </p>
+          <h4>Projects</h4>
+          <ol>
+            <li>Interpretable Linear Models for Heart Disease Prediction: A Comparative Study.
+              <a class="btn" href="https://stars.library.ucf.edu/cgi/viewcontent.cgi?article=1056&amp;context=data-science-mining" target="_blank">Link</a></li>
+            <li>Predicting Male Flowering Time in Maize Using Machine Learning Technique.
+              <a class="btn" href="https://stars.library.ucf.edu/data-science-mining/51/" target="_blank">Link</a></li>
+            <li>Data-Driven Prediction of Superconducting Critical Temperature: A Linear and Regularized Linear Modeling Approach.
+              <a class="btn" href="https://stars.library.ucf.edu/data-science-mining/50/" target="_blank">Link</a></li>
+            <li>Detecting Physical Activity Using Wearable Sensor Data.
+              <a class="btn" href="https://stars.library.ucf.edu/data-science-mining/43/" target="_blank">Link</a></li>
+            <li>Clustering Dataset Using K-Mean Clustering.
+              <a class="btn" href="https://stars.library.ucf.edu/data-science-mining/39/" target="_blank">Link</a></li>
+            <li>Handwritten Digit Recognition using Machine Learning.
+              <a class="btn" href="https://stars.library.ucf.edu/data-science-mining/40/" target="_blank">Link</a></li>
+            <li>Performance of LASSO and Ridge Regression for Variable Selection in Genome-Wide Association Studies of Maize Flowering Time.
+              <a class="btn" href="https://stars.library.ucf.edu/data-science-mining/42/" target="_blank">Link</a></li>
+            <li>Data Science Job Salary Prediction Using Linear Regression.
+              <a class="btn" href="https://stars.library.ucf.edu/data-science-mining/41/" target="_blank">Link</a></li>
+          </ol>
+        </div>
+      </div>
     </section>
+
   </main>
 
   <footer>© 2026 Dipok Deb · Last updated: October 2026</footer>
