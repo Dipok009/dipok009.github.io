@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<!--
+  ============================================================
+  HOME PAGE  (index.html)
+  ============================================================
+  The website has 5 pages. Each page is its own file:
+    index.html          = Home (photo, about me, news, contact)
+    publications.html   = Publications
+    research.html       = Research projects
+    teaching.html       = Teaching
+    cv.html             = CV (education, experience, awards, service)
+
+  The menu at the top is the SAME on every page. If you add a new
+  page, copy the menu into every file.
+
+  To ADD an item (a news line, a paper...), copy one <li> ... </li>
+  block, paste it right below, and change the text.
+  To add a LINK:  <a href="https://the-address.com">text to click</a>
+  ============================================================
+-->
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dipok Deb</title>
+  <meta name="description" content="Dipok Deb - PhD student in Big Data Analytics at the University of Central Florida.">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/academicons/1.9.4/css/academicons.min.css">
+</head>
+
+<body>
+
+  <!-- ===================== TOP MENU ===================== -->
+  <!-- class="active" marks the page you are on (shown in blue). -->
+  <nav class="navbar">
+    <div class="nav-inner">
+      <a class="nav-name" href="index.html">Dipok Deb</a>
+      <div class="nav-links">
+        <a href="index.html" class="active">Home</a>
+        <a href="publications.html">Publications</a>
+        <a href="research.html">Research</a>
+        <a href="teaching.html">Teaching</a>
+        <a href="cv.html">CV</a>
+      </div>
+    </div>
+  </nav>
+
+  <main class="container">
+
+    <!-- ===================== TOP: photo + contact info ===================== -->
+    <section class="intro">
+      <!-- Your photo (the file "photo.jpg") -->
+      <img src="photo.jpg" alt="Photo of Dipok Deb" class="intro-photo">
+
+      <div class="intro-info">
+        <h1>Dipok Deb</h1>
+        <p>
+          PhD Student, Big Data Analytics<br>
+          <a href="https://sciences.ucf.edu/sdmss/">School of Data, Mathematical, and Statistical Sciences</a><br>
+          <a href="https://www.ucf.edu/">University of Central Florida (UCF)</a>, Orlando, FL<br>
+          Email: <a href="mailto:dipok.deb@ucf.edu">dipok.deb@ucf.edu</a>
+        </p>
+        <!-- Your profile links -->
+        <p class="intro-links">
+          <a href="https://scholar.google.com/citations?user=Wr4R8skAAAAJ&hl=en">Google Scholar</a>
+          <a href="https://www.linkedin.com/in/dipok-deb">LinkedIn</a>
+          <a href="https://github.com/Dipok009">GitHub</a>
+          <a href="cv.pdf" target="_blank">CV</a>
+        </p>
+      </div>
+    </section>
+
+    <!-- ===================== ABOUT ME ===================== -->
+    <section>
+      <h2>About Me</h2>
+      <p>
+        I am a PhD student in <b>Big Data Analytics</b> at the
+        <a href="https://www.ucf.edu/">University of Central Florida (UCF)</a>,
+        where I work as a Research Assistant. My research applies
+        <b>machine learning</b> and <b>deep learning</b> to problems in
+        <b>cybersecurity</b>, such as detecting DDoS attacks and intrusions in IoT networks,
+        and to <b>healthcare data</b>.
+      </p>
+      <p>
+        Before UCF, I earned an M.S. in Mathematics (Statistics) from the
+        University of Texas Rio Grande Valley, and an M.S. and B.S. in Mathematics from
+        Shahjalal University of Science &amp; Technology (SUST), Bangladesh,
+        where I also served as a Lecturer from 2018 to 2022.
+      </p>
+    </section>
+
+    <!-- ===================== RESEARCH INTERESTS ===================== -->
+    <section>
+      <h2>Research Interests</h2>
+      <div class="tags">
+        <span class="tag">Machine Learning</span>
+        <span class="tag">Deep Learning</span>
+        <span class="tag">LLMs</span>
+        <span class="tag">Cyber Security</span>
+        <span class="tag">Network Security</span>
+        <span class="tag">Quantum Cybersecurity</span>
+        <span class="tag">Quantum Computing</span>
+        <span class="tag">IoT Security</span>
+        <span class="tag">Data Science</span>
+      </div>
+    </section>
+
+    <!-- ===================== NEWS (newest at the top) ===================== -->
+    <section>
+      <h2>News &amp; Updates</h2>
+      <ul class="news">
+        <li><span class="date">Aug 2026</span> Started as a Research Assistant at UCF.</li>
+        <li><span class="date">2026</span> Serving as a reviewer for <b>NeurIPS 2026</b>.</li>
+        <li><span class="date">2026</span> Received the <b>VoloRidge Fellowship</b> from SDMSS, UCF.</li>
+        <li><span class="date">Aug 2024</span> Started my PhD in Big Data Analytics at UCF.</li>
+        <li><span class="date">2024</span> Paper presented at the <b>2024 IEEE World AI IoT Congress</b>, Seattle.</li>
+      </ul>
+    </section>
+
+    <!-- ===================== CONTACT ===================== -->
+    <section>
+      <h2>Contact</h2>
+      <p>
+        <i class="fa-solid fa-envelope"></i> <a href="mailto:dipok.deb@ucf.edu">dipok.deb@ucf.edu</a><br>
+        <i class="fa-solid fa-location-dot"></i> University of Central Florida, Orlando, FL, USA
+      </p>
+    </section>
+
+  </main>
+
+  <footer>© 2026 Dipok Deb · Last updated: October 2026</footer>
+
+</body>
+</html>
