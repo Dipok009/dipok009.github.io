@@ -123,10 +123,9 @@ h3 { font-size: 19px; margin: 22px 0 10px; color: #333; }
 
 /* ---------- News list ---------- */
 .news { list-style: none; padding: 0; margin: 0; }
-.news li { padding: 6px 0; border-bottom: 1px dashed var(--line); }
+.news li { display: flex; gap: 16px; padding: 6px 0; border-bottom: 1px dashed var(--line); }
 .news .date {
-  display: inline-block;
-  min-width: 90px;
+  flex: 0 0 130px;
   font-weight: 600;
   color: var(--accent);
 }
