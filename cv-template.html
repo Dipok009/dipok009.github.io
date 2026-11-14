@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<!--
+  CV PAGE TEMPLATE (cv-template.html)
+
+  Do NOT edit cv.html: it is rebuilt automatically from your Overleaf CV.
+  Edit THIS file to change the menu, the title, or the button.
+  Your CV text is placed where you see  $body$  below. Keep that line.
+-->
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CV | Dipok Deb</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    /* Spacing for the CV text that comes from Overleaf */
+    .cv-content ul, .cv-content ol { padding-left: 22px; }
+    .cv-content li { margin-bottom: 8px; }
+    .cv-content li p { margin: 0; }
+  </style>
+</head>
+
+<body>
+
+  <!-- ===================== TOP MENU ===================== -->
+  <nav class="navbar">
+    <div class="nav-inner">
+      <a class="nav-name" href="index.html">Dipok Deb</a>
+      <div class="nav-links">
+        <a href="index.html">Home</a>
+        <a href="research.html">Research</a>
+        <a href="publications.html">Publications</a>
+        <a href="teaching.html">Teaching</a>
+        <a href="cv.html" class="active">CV</a>
+      </div>
+    </div>
+  </nav>
+
+  <main class="container">
+    <h1 class="page-title">Curriculum Vitae</h1>
+    <!-- This button opens the newest CV PDF from Overleaf -->
+    <p><a class="btn-big" href="cv.pdf" target="_blank">Download CV (PDF)</a></p>
+
+    <!-- ===================== CV TEXT FROM OVERLEAF ===================== -->
+    <div class="cv-content">
+$body$
+    </div>
+  </main>
+
+  <footer>© 2026 Dipok Deb</footer>
+
+</body>
+</html>
